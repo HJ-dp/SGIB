@@ -1,27 +1,27 @@
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
-import { useTheme } from '../../context/themeProvider';
+// import { useTheme } from '../../context/themeProvider';
 
 function Header() {
-    const ThemeMode = useTheme();
-    const CurrentMode = ThemeMode[0] === 'light' ? '🌝' : '🌚';
+    // const ThemeMode = useTheme();
+    // const CurrentMode = ThemeMode[0] === 'light' ? '🌝' : '🌚';
 
     return (
         <HeaderContainer>
             <div className="header-container">
                 <div className='header-wrapper'>
                     <div className='header-menu-box'>
-                        <Link className='logo' to='/' >SGIB</Link>
+                        <Link className='logo' to='/'>SGIB</Link>
                     </div>
-                    <ColoredText>Current mode is {CurrentMode}</ColoredText>
                     <div className='header-menu-box'>
-                        <Link to='/' >공통</Link>
-                        <Link to='/' >특화</Link>
-                        <Link to='/' >자율</Link>
+                        <Link to={`/board/${"common"}`} >공통</Link>
+                        <Link to={`/board/${"special"}`} >특화</Link>
+                        <Link to={`/board/${"free"}`} >자율</Link>
+                        <Link to='/hrboard' >인력소</Link>
                     </div>
                     <div className='header-login-box'>
-                        <Link to='/' >로그인</Link>
-                        <Link to='/test'>마이페이지</Link>
+                        <Link to='login' >로그인</Link>
+                        <Link to='/regist'>회원가입</Link>
                     </div>
                     <div className='menuBtn'><img width="40" height="40" src="https://img.icons8.com/cotton/50/menu.png" alt="menu" /></div>
                 </div>
@@ -32,9 +32,9 @@ function Header() {
 
 export default Header;
 
-const ColoredText = styled.span`
-  color: #E6B74A;
-`
+// const ColoredText = styled.span`
+//   color: #E6B74A;
+// `
 
 const HeaderContainer = styled.main`
 .header-container {
@@ -43,7 +43,6 @@ const HeaderContainer = styled.main`
     display: flex;
     align-items: center;
     color: ${({ theme }) => theme.headerTextColor};
-    transition:0.5s;
 }
 
 .header-wrapper {
@@ -73,7 +72,6 @@ const HeaderContainer = styled.main`
 .header-login-box a:hover,
 .header-menu-box a:hover {
     transform: scale(1.1);
-    transition: 0.2s;
 }
 
 @media (max-width:768px) {

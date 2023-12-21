@@ -12,7 +12,7 @@ function Footer() {
         </div>
         <div className='footer-links'>
             <h1>문의</h1>
-            <span>sgib@.sgib.com</span>
+            <span>sgib@sgib.com</span>
         </div>
         <span>Copyright 2023. BMK, LHJ. all rights reserved.</span>
       </div>
@@ -24,13 +24,23 @@ function Footer() {
   
 
   const FooterContainter = styled.main`
+  width:100%;
+  background-color: ${({ theme }) => theme.headerColor};
+  margin: 0 auto;
+
   .footer-containter{
-    background-color: #e7e7e7;
     height: 200px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10vw;
+    margin:0 auto;
+    max-width:1024px;
+    color : ${({ theme }) => theme.footerTextColor};
+    
 }
+@media (max-width:1200px) {
+  padding: 0 5vw;
+  
+}
+
   `;

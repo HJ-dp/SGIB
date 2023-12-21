@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useTheme } from '../context/themeProvider';
-import { FlexContainer } from '../style/styles';
+import { FlexContainer, MainContainer } from '../style/styles';
 import ThemeToggle from '../theme/ThemeToggle';
 import Header from './common/Header';
 import Footer from './common/Footer';
@@ -14,7 +14,7 @@ const AppLayout = ({children}) => {
       <ThemeToggle toggle={toggleTheme} mode={ThemeMode}>
         DarkMode
       </ThemeToggle>
-      <FlexContainer>{children}</FlexContainer>
+      <FlexContainer><MainContainer>{children}</MainContainer></FlexContainer>
       <Footer/>
     </WrapContainer>
   )

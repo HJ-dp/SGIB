@@ -3,25 +3,6 @@ import reset from 'styled-reset';
 
 export const GlobalStyle = createGlobalStyle`
     ${reset}
-    /*
-Noto Sans Korean
-ExtraLight 200
-Regular 400
-SemiBold 600
-
-font-family: 'Noto Sans KR', sans-serif;  */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;400;600&display=swap');
-
-
-/* Roboto
-Light 300
-Medium 500
-
-font-family: 'Roboto', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
-
-
-/***** CSS ì´ˆê¸°í™” *****/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -54,6 +35,7 @@ body {
     overflow-x: hidden;
     color: rgb(29, 29, 31);
     letter-spacing: -0.05em;
+    background-color: ${({ theme }) => theme.headerColor};
 }
 ol, ul {
 	list-style: none;
