@@ -3,8 +3,8 @@ export const lightTheme = {
 
     keyColor:'#C299FA',
     titleColor: '#292b2d',
-    textColor: '#292b2d',
-    secondtextColor:'90949c',
+    textColor: 'ㅊ',
+    secondtextColor:'#90949c',
 
     borderColor: 'none',
 
@@ -30,7 +30,7 @@ export const darkTheme = {
     keyColor:'#C299FA',
     titleColor: '#eee',
     textColor: '#e7e7e7',
-    secondtextColor:'90949c',
+    secondtextColor:'#292b2d',
 
     borderColor: '1px solid #bbb',
 

@@ -12,13 +12,16 @@ export const FlexContainer = styled.div`
   min-height: calc( 100vh - 299px );
   background-color: ${({ theme }) => theme.bgColor};
   & h2 {
-    font-size: 48px;
+    font-size: 24px;
     font-weight: 500;
     color: ${({ theme }) => theme.titleColor};
   };
   & h3 {
     font-weight: 400;
-    color: ${({ theme }) => theme.textColor};
+  }
+  & h4 {
+    font-weight: 200;
+    color: ${({ theme }) => theme.secondTextColor};
   }
   & form {
     color: ${({ theme }) => theme.headerTextColor};
@@ -81,5 +84,4 @@ export const MainContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items:flex-start;
-    color: ${({ theme }) => theme.headerTextColor};
     `

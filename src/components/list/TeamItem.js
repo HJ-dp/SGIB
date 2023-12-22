@@ -30,7 +30,7 @@ export default TeamItem;
 
 const TeamItemContainer = styled.div`
   position : relative;
-  width : 400px;
+  width : 300px;
   min-height : 200px;
   padding : 10px;
   display : flex;
@@ -52,6 +52,7 @@ const BadgeContainer = styled.div`
   padding:3px;
   display:flex;
   flex-wrap: wrap;
+  align-items:center;
   `;
 
 const Badge = styled.p`
@@ -67,6 +68,7 @@ const Picture = styled.div`
   height:80px;
   border-radius:5px;
   background-color:gray;
+  border:1px solid white;
   `;
 
 const InfoContainer = styled.div`

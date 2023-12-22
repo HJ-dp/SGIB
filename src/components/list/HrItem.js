@@ -24,7 +24,6 @@ function HrItem(props) {
 
 export default HrItem;
 
-
 const HrItemContainer = styled.div`
   width:200px;
   min-height:200px;
@@ -63,6 +62,7 @@ const Picture = styled.div`
   height:80px;
   border-radius:5px;
   background-color:gray;
+  border:1px solid white;
   `;
 
 const InfoContainer = styled.div`

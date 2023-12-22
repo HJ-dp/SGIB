@@ -4,8 +4,8 @@ function CampusSelector({ handleState }) {
     return (
         <SelectorContainer>
             <Button onClick={() => handleState('서울')}>서울</Button>
-            <Button onClick={() => handleState('대전')}>대전</Button>
             <Button onClick={() => handleState('구미')}>구미</Button>
+            <Button onClick={() => handleState('대전')}>대전</Button>
             <Button onClick={() => handleState('광주')}>광주</Button>
             <Button onClick={() => handleState('부울경')}>부울경</Button>
         </SelectorContainer>

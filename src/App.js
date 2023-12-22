@@ -2,7 +2,7 @@ import Regist from './pages/board/Regist';
 import Board from './pages/board/Board';
 import MainPage from './pages/Mainpage';
 import NotFound from './pages/NotFound';
-import AppLayout from './components/AppLayout';
+import AppLayout from './components/common/AppLayout';
 import { ThemeProvider } from './context/themeProvider';
 import { GlobalStyle } from './theme/globalStyle';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
